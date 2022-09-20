@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/cloud_download_icon"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cloud_download" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cloud_download_icon">
+
+            <RadioButton
+                android:id="@+id/rd_glide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButton_Clicked"
+                android:text="@string/glide_text"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rd_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onRadioButton_Clicked"
+                android:text="@string/loadapp_text"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rd_retrofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onRadioButton_Clicked"
+                android:text="@string/retrofit_text"
+                android:textSize="24sp" />
+
+        </RadioGroup>
+
+        <com.example.imageloader.LoadingButton
+            android:id="@+id/download_button"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="DownLoad"
+            app:backgroundColor="@color/colorPrimaryDark"
+            app:buttonCircleColor="@color/colorAccent"
+            app:buttonLoadingColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:textColor="@android:color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
