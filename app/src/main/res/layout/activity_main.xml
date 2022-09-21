@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ui.MainActivity">
 
 
         <ImageView
@@ -34,7 +34,7 @@
                 android:id="@+id/rd_glide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButton_Clicked"
+
                 android:text="@string/glide_text"
                 android:textSize="24sp" />
 
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:onClick="onRadioButton_Clicked"
+
                 android:text="@string/loadapp_text"
                 android:textSize="24sp" />
 
@@ -52,13 +52,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:onClick="onRadioButton_Clicked"
+
                 android:text="@string/retrofit_text"
                 android:textSize="24sp" />
 
         </RadioGroup>
 
-        <com.example.imageloader.LoadingButton
+        <com.example.imageloader.utils.CustomButton
             android:id="@+id/download_button"
             android:layout_width="0dp"
             android:layout_height="45dp"

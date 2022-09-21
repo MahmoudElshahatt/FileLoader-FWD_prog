@@ -1,4 +1,4 @@
-package com.example.imageloader
+package com.example.imageloader.utils
 
 sealed class ButtonState {
     object Clicked : ButtonState()

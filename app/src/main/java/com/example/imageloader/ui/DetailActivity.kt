@@ -1,4 +1,4 @@
-package com.example.imageloader
+package com.example.imageloader.ui
 
 import android.app.NotificationManager
 import android.graphics.Color
@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import com.example.imageloader.R
 
 class DetailActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.M)
